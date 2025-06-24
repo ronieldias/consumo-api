@@ -1,0 +1,98 @@
+/* --- Estilos Gerais --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* --- Títulos --- */
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-top: 40px; /* Adiciona um espaço extra acima de cada nova seção */
+    width: 80%;
+    max-width: 600px;
+}
+
+h2 {
+    color: #7f8c8d;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* --- Botões --- */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* --- Campos de Input --- */
+input[type="text"] {
+    padding: 12px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+/* --- Divs de Resultado e Erro --- */
+div[id^="res"], div[id*="Vento"], div[id*="direcao"], div[id*="turno"], div[id*="temperatura"] {
+    margin-top: 15px;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    min-width: 300px;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+
+/* Estilo específico para o resultado do Post */
+#resPost {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+/* Estilo para todas as mensagens de erro */
+p[id^="erro"], div[id^="erro"] {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+/* --- Imagem do Gato --- */
+#gato {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px; /* Define uma altura máxima para a imagem não ficar gigante */
+    border-radius: 10px;
+    margin-top: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
