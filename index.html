@@ -5,38 +5,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="scripts.js" defer></script>
+    <script type="module" src="scripts.js" defer></script>
     <link rel="stylesheet" href="styles.css">
 
 </head>
-
+ 
 <body>
-    <h1>CAT API (GET)</h1>
-    <h2>Gerando gatos</h2>
+    <h1>Consumindo APIs externas</h1>
+
+    <h2>API de gatos: The Cat API</h2>
+    <h3>Gerando gatos randômicos</h3>
     <button id="botaoGatoRandomico">Gato randômico</button>
     <div id="resGato">
         <img id="gato" src="" alt="">
         <p id="erroGato"></p>
     </div>
 
-    <h1>Clima API (GET)</h1>
-    <h2>Consultando clima em tempo real</h2>
+    <h2>Clima API 01 : Open-Meteo + Nominatim</h2>
+    <h3>Consultando clima em tempo real</h3>
     <input id="cidade" type="text" placeholder="Cidade">
     <button id="botaoConsultarClima">Consultar</button>
-    <div id="temperatura"></div>
-    <div id="velocidadeVento"></div>
-    <div id="direcaoVento"></div>
-    <div id="turno"></div>
+    <div id="resultadoClima"></div>
     <div id="erroClima"></div>
 
-    <h1>POST API (JSONPlaceholder)</h1>
-    <h2>Criando um novo post</h2>
+    <h2>Clima API 02: OpenWeather (API Key)</h2>
+    <h3>Consultando clima em tempo real</h3>
+    <input id="cidade2" type="text" placeholder="Cidade (ex: Teresina)">
+    <input id="codigoPais" type="text" placeholder="Cód. País (ex: BR)">
+    <button id="consultarClima2">Consultar clima</button>
+    <div id="resultadoClima2"></div>
+    <div id="erroClima2"></div>
+
+    <h2>Procurar artistas: Spotify (API key + Acess Token)</h2>
+    <input id="nomeArtista" type="text" placeholder="Nome do artista (ex: Coldplay)">
+    <button id="buscarArtista">Buscar</button>
+    <div id="resultadoArtista"></div>
+    <div id="erroSpotify"></div>
+
+    <h2>POST API : JSONPlaceholder</h2>
+    <h3>Criando um novo post</h3>
     <input id="tituloPost" type="text" placeholder="Título do post">
     <input id="corpoPost" type="text" placeholder="Conteúdo do post">
     <button id="botaoCriarPost">Criar Post</button>
     <div id="resPost"></div>
     <div id="erroPost"></div>
-
 </body>
 
 </html>
